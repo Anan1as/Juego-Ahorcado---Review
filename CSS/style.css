@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    gap: 20px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.contJuego{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputLetra{
+    width: 60%;
+    padding: 5px;
+    position: relative;
+    left: 20%;
+}
+::placeholder{
+    text-align: center;
+}
+
+.boton{
+    width: 20%;
+    padding: 10px 15px;
+    background-color: chartreuse;
+    color:black;
+    font-size: 15px;
+    border-radius: 10px;
+    position: relative;
+    left: 40%;
+}
