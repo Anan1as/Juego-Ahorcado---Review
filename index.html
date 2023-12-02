@@ -8,6 +8,12 @@
     <title>Ahorcado</title>
 </head>
 <body>
-    
+    <h1>Juego de Ahorcado</h1>
+    <p>Te daremos una palabra y tendrás que adivinar, coloca una letra y dale al boton<br> para ver si acertaste, tienes 6 intentos.<br>¡Suerte!</p>
+    <div id="palabra"></div>
+    <p>Intentos restantes: <span id="intentos"></span></p>
+    <p>Letras usadas: <span id="letrasUsadas"></span></p>
+    <input type="text" id="adivinarInput" maxlength="1">
+    <button onclick="adivinar()">Adivinar</button>
 </body>
 </html>
