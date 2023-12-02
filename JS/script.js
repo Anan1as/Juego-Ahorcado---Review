@@ -1,6 +1,6 @@
 const palabras = ["programador", "riwi", "ingles", "python", "javascript"];
 let palabraSecreta = palabras[Math.floor(Math.random() * palabras.length)];
-let palabraMostrada = '_ '.repeat(palabraSecreta.length);
+let palabraMostrada = '_'.repeat(palabraSecreta.length);
 let intentosRestantes = 7;
 let letrasUsadas = [];
 
