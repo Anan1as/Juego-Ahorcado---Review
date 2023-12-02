@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <script src="JS/script.js"></script>
     <title>Ahorcado</title>
-</head>
-<body>
-    <h1>Juego de Ahorcado</h1>
-    <p>Te daremos una palabra y tendrás que adivinar, coloca una letra y dale al boton<br> para ver si acertaste, tienes 6 intentos.<br>¡Suerte!</p>
-    <div id="palabra"></div>
-    <p>Intentos restantes: <span id="intentos"></span></p>
-    <p>Letras usadas: <span id="letrasUsadas"></span></p>
-    <input type="text" id="adivinarInput" maxlength="1">
-    <button onclick="adivinar()">Adivinar</button>
-</body>
+  </head>
+  <body>
+    <div class="contJuego">
+      <h1 class="titulo">Juego de Ahorcado</h1>
+      <p>
+        Te daremos una palabra y tendrás que adivinar, coloca una letra y dale
+        al boton<br />
+        para ver si acertaste, tienes 6 intentos.<br />¡Suerte!
+      </p>
+      <div id="palabra"></div>
+      <p>Intentos restantes: <span id="intentos"></span></p>
+      <p>Letras usadas: <span id="letrasUsadas"></span></p>
+      <input
+        class="inputLetra"
+        type="text"
+        id="adivinarInput"
+        maxlength="1"
+        placeholder="Ingresa la letras"
+      />
+      <button class="boton" onclick="adivinar()">Adivinar</button>
+    </div>
+  </body>
 </html>
