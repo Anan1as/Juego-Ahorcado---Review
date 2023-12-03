@@ -16,15 +16,21 @@ body{
 
 .titulo{
     text-align: center;
+    margin-bottom: 15px;
 }
 
-.contJuego{
+.infoJuego{
+    width: 800px;
     background-color: aqua;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
+}
+
+.infoJuego h2 {
+    text-align: center;
 }
 
 .inputLetra{
@@ -46,4 +52,22 @@ body{
     border-radius: 10px;
     position: relative;
     left: 40%;
+}
+
+.contJuego{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+
+.animacion{
+    background-color: blueviolet;
+    width: 800px;
+    border-radius: 10px;
+    border: 4px solid #ccc;
+}
+
+#palabra{
+    text-align: center;
+    font-size: 40px;
 }
