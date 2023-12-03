@@ -10,8 +10,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
     gap: 20px;
+}
+
+p{
+    font-size: 20px;
 }
 
 .titulo{
@@ -20,11 +23,12 @@ body{
     background-color: antiquewhite;
     padding: 10px 20px;
     border-radius: 10px;
+    font-size: 40px;
 }
 
 .infoJuego{
     width: 800px;
-    background-color: aqua;
+    background-color: #b0c2f2;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -34,9 +38,12 @@ body{
 
 .infoJuego h2 {
     text-align: center;
+    font-size: 30px;
 }
 
 .inputLetra{
+    text-align: center;
+    font-size: 15px;
     width: 60%;
     padding: 5px;
     position: relative;
@@ -67,14 +74,14 @@ body{
     background-color: rgb(43, 226, 119);
     width: 800px;
     border-radius: 10px;
-    border: 6px solid black;
+    border: 8px solid black;
 }
 
 #palabra{
     text-align: center;
     font-size: 50px;
     position: relative;
-    top: -30px;
+    top: -20px;
 }
 
 /*  posicion del avatar del juego */
