@@ -40,6 +40,7 @@ function adivinar() {
         reiniciarJuego();
     }
 
+    animacion();
     mostrarPalabra();
     document.getElementById("adivinarInput").value = '';
 }
@@ -49,7 +50,46 @@ function reiniciarJuego() {
     palabraMostrada = '_'.repeat(palabraSecreta.length);
     intentosRestantes = 6;
     letrasUsadas = [];
+    reinicioAnimacion()
     mostrarPalabra();
 }
 
 mostrarPalabra();
+
+function animacion(){
+    // Partes del avatar
+    const cabeza = document.getElementById("cabeza");
+    const torzo = document.getElementById("torzo");
+    const brazoIz = document.getElementById("brazoIz");
+    const brazoDe = document.getElementById("brazoDe");
+    const pieIz = document.getElementById("pieIz");
+    const pieDe = document.getElementById("pieDe");
+    
+    if (intentosRestantes==5){
+        cabeza.style.display = "block";
+    }
+    else if (intentosRestantes==4){
+        torzo.style.display = "block";
+    }
+    else if (intentosRestantes==3){
+        brazoIz.style.display = "block";
+    }
+    else if (intentosRestantes==2){
+        brazoDe.style.display = "block";
+    }
+    else if (intentosRestantes==1){
+        pieIz.style.display = "block";
+    }
+    else if (intentosRestantes==0){
+        pieDe.style.display = "block";
+    }
+}
+
+function reinicioAnimacion(){
+    cabeza.style.display = "none";
+    torzo.style.display = "none";
+    brazoIz.style.display = "none";
+    brazoDe.style.display = "none";
+    pieIz.style.display = "none";
+    pieDe.style.display = "none";
+}

@@ -81,7 +81,7 @@ p{
     text-align: center;
     font-size: 50px;
     position: relative;
-    top: -20px;
+    top: 100px;
 }
 
 /*  posicion del avatar del juego */
@@ -148,55 +148,61 @@ p{
 /* cuerpo del avatar */
 
 .cabeza{
-    position: relative;
+    position: absolute;
     left: -8px;
     top: -7px;
     transform: rotate(40deg);
 }
 
 .color{
-    position: relative;
+    position: absolute;
     height: 47px;
     width: 47px;
     background-color: white;
     border-radius: 50%;
-    left: 245px;
-    top: -75px;
+    right: 360px;
+    top: 45%;
+    display: none;
 }
 
-.torzo{
-    position: relative;
+#torzo{
+    position: absolute;
     width: 70px;
-    left: 235px;
-    top: -80px;
+    right: 348px;
+    top: 51%;
+    display: none;
 }
 
-.brazoIz{
-    position: relative;
-    left: 152px;
-    top: -88px;
+#brazoIz{
+    position: absolute;
+    right: 366px;
+    top: 51%;
     transform: rotate(40deg);
+    display: none;
 }
 
-.brazoDe{
-    position: relative;
-    left: 109px;
-    top: -87px;
+#brazoDe{
+    position: absolute;
+    right: 335.8px;
+    top: 51%;
     transform: rotate(-40deg);
+    display: none;
 }
 
-.pieIz{
-    position: relative;
-    left: 20px;
-    top: -42px;
+#pieIz{
+    position: absolute;
+    right: 360px;
+    top: 57.8%;
     transform: rotate(25deg);
+    display: none;
 }
 
-.pieDe{
-    position: relative;
-    left: -32px;
-    top: -42px;
+#pieDe{
+    position: absolute;
+    right: 342px;
+    top: 57.8%;
     transform: rotate(-25deg);
+    display: none;
 }
 
 #video-fondo {
